@@ -1,0 +1,22 @@
+<%- include ('partials/_header'); -%>
+<nav class="text-white text-center bg-dark pt-3 pb-3">
+  <a href="/" class="navbar-brand text-white">CONEXION A MONGO DB</a>
+</nav>
+<div class="container">
+  <header>
+    <h1 class="mt-3 text-center"><%= blog.titulo %></h1>
+  </header>
+  <section>
+    <p class="text-end"><%= blog.fecha %></p>
+    <p class="text-decoration-underline text-end"><%= blog.autor %></p>
+    <p><%= blog.contenido %></p>
+    <img src="<%= blog.foto%>" width="400" class="mx-auto d-block" />
+    <hr />
+    <h5 class="text-decoration-underline">Comentarios</h5>
+    <% for(var i = 0;i < blog.comentarios.length;i++) {%>
+    <p class="fw-bold"><%= blog.comentarios[i].nombre%></p>
+    <p><%= blog.comentarios[i].comentario%></p>
+    <% } %>
+  </section>
+</div>
+<%- include ('partials/_footer'); -%>
