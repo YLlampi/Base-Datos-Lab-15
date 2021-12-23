@@ -1,22 +1,15 @@
 {
-  "name": "laboratorio_18_ticona_motta_alvaro_bd_epcc_unsa",
+  "name": "LAB15",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "run": "nodemon src/app.js",
-    "start": "node src/app.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "ejs": "^3.1.6",
-    "express": "^4.17.2",
-    "mongoose": "^6.1.2",
-    "morgan": "^1.10.0"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.15"
+    "mongoose": "^6.1.1"
   }
 }
